@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_div_container">
+            <div class="main_screen_container">
+                <h3 class="hading_container">Age calculator</h3>
+                <div class="user_input_container">
+                    <div class="dob_tile">Select DOB</div>
+                    <input type="date" id="date" name="dob">
+                </div>
+                <div class="user_input_container">
+                    <div class="date_tile">Today Date</div>
+                    <input type="date" id="today_date" name="dob" disabled>
+                </div>
+                <button class="btn" onclick="ageCalculate()">Calculate</button>
+                <div class="age_main_big_container">
+                    <div class="left_side_div_age_list">
+                        <div>Age</div>
+                        <div><b id="year">_</b>Year</div>
+                        <div id="m_d"><b id="month">_</b>Months | <b id="day">_</b> Days</div>
+                    </div>
+                    <div class="right_side_div_age_list">
+                        <div>Next Birthday</div>
+                        <!-- <img src="https://i.pinimg.com/originals/ce/e2/85/cee2854c1ca3a12fe2655f3376b5c110.gif" alt="dssdgddf"> -->
+                        <img src="logo.svg" alt="">
+                        <div id="n_b"><b id="month1">_</b>Months | <b id="day1">_</b>Days</div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
